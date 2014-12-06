@@ -25,10 +25,12 @@ sleep 3
 morse.chars do |m|
   if m == "." then
     arduino.digital_write 13, true
+    `say -v yuna "냐"`
     sleep 0.2
     arduino.digital_write 13, false
   elsif m == "-" then
     arduino.digital_write 13, true
+    `say -v yuna "냐아"`
     sleep 1
     arduino.digital_write 13, false
   else
@@ -40,3 +42,4 @@ end
 # 停止処理
 arduino.digital_write 13, false
 arduino.close
+
