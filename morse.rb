@@ -22,14 +22,16 @@ puts "firmata version #{arduino.version}"
 morse.chars do |m|
   if m == "." then
     arduino.digital_write 13, true
-    sleep 0.1
+    sleep 0.2
+    arduino.digital_write 13, false
   elsif m == "-" then
     arduino.digital_write 13, true
-    sleep 0.5
-  else
+    sleep 1
     arduino.digital_write 13, false
+  else
     sleep 1
   end
+  sleep 0.2
 end
 
 # 停止処理
