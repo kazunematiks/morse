@@ -31,10 +31,10 @@ morse.chars do |m|
   elsif m == "-" then
     arduino.digital_write 13, true
     `say -v yuna "냐아"`
-    sleep 1
+    sleep 0.5
     arduino.digital_write 13, false
   else
-    sleep 1
+    sleep 0.5
   end
   sleep 0.2
 end

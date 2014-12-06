@@ -1,15 +1,41 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
     arduino_firmata (0.3.7)
       args_parser (>= 0.1.4)
       event_emitter (>= 0.2.4)
       serialport (>= 1.1.0)
     args_parser (0.2.0)
+    buftok (0.2.0)
     dotenv (1.0.2)
+    equalizer (0.0.9)
     event_emitter (0.2.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    http (0.6.3)
+      http_parser.rb (~> 0.6.0)
+    http_parser.rb (0.6.0)
+    json (1.8.1)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    multipart-post (2.0.0)
+    naught (1.0.0)
     serialport (1.3.1)
+    simple_oauth (0.3.0)
     telegraph (1.0.1)
+    thread_safe (0.3.4)
+    twitter (5.13.0)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      equalizer (~> 0.0.9)
+      faraday (~> 0.9.0)
+      http (~> 0.6.0)
+      http_parser.rb (~> 0.6.0)
+      json (~> 1.8)
+      memoizable (~> 0.4.0)
+      naught (~> 1.0)
+      simple_oauth (~> 0.3.0)
 
 PLATFORMS
   ruby
@@ -18,3 +44,4 @@ DEPENDENCIES
   arduino_firmata
   dotenv
   telegraph
+  twitter
