@@ -19,6 +19,9 @@ puts ENV['CONNECTION_PATH']
 arduino = ArduinoFirmata.connect ENV['CONNECTION_PATH']
 puts "firmata version #{arduino.version}"
 
+# カキコミから実行まで待機
+sleep 3
+
 morse.chars do |m|
   if m == "." then
     arduino.digital_write 13, true
