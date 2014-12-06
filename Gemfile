@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 gem 'telegraph'
-# gem "rails"
+gem 'arduino_firmata'
