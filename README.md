@@ -3,7 +3,7 @@ morse
 
 arduinoのLEDでモールス信号させます。
 ```bash
-bundle install --path /lib/bundler/man/
+bundle install --path lib/bundler/man/
 ```
 
 .envに通信のパスを書く。
