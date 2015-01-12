@@ -10,3 +10,6 @@ gem 'arduino_firmata'
 
 # api
 gem 'twitter'
+
+# dev
+gem 'pry'
